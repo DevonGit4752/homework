@@ -10,42 +10,37 @@
 
 <body>
   <form class="form">
-    <div class="fieldset-container">
-      <fieldset class="form-group">
-        <h3 class="hh">Ваши личные данные</h3>
-        <label class="label">
-          Ваше имя
-          <input class="input" placeholder="Имя" inputmode="name" required>
-        </label>
-        <label class="label">
-          Ваш возраст
-          <input class="input" placeholder="Возраст" inputmode="numeric" name="age" required>
-        </label>
-        <label class="label">
-          Ваш номер телефона
-          <input class="input" placeholder="Номер телефона" inputmode="tel" name="phone" required>
-        </label>
-        <label class="label">
-          Ваша почта
-          <input class="input" placeholder="Почта" inputmode="email" name="email" required>
-        </label>
-      </fieldset>
+
+    <fieldset class="form-group">
+      <legend class="form-group-title">Ваши личные данные</legend>
+
+      <label for="name" class="label">Ваше имя</label>
+      <input id="name" class="input" type="text" placeholder="Имя" name="name" required>
+
+      <label for="age" class="label">Ваш возраст</label>
+      <input id="age" class="input" type="number" placeholder="Возраст" name="age" required>
+
+      <label for="phone" class="label">Ваш номер телефона</label>
+      <input id="phone" class="input" type="tel" placeholder="Номер телефона" name="phone" required>
+
+      <label for="email" class="label">Ваша почта</label>
+      <input id="email" class="input" type="email" placeholder="Почта" name="email" required>
+    </fieldset>
 
 
-      <fieldset>
-        <label class="labell">
-          Сообщение
-          <textarea class="texter" placeholder="Ваше сообщение" inputmode="message" name="message" required></textarea>
-        </label>
-        <label class="checkbox">
-          <input type="checkbox" name="check" value="check">
-          Я принимаю правила
-        </label>
-        <button type="submit" class="button">Отправить</button>
-      </fieldset>
-    </div>
+    <fieldset class="form-group">
+      <label for="message" class="label">Сообщение</label>
+      <textarea id="message" class="textarea" placeholder="Ваше сообщение" name="message" required></textarea>
+      <label class="label">
+        <input class="checkbox" type="checkbox" name="checkbox" required>
+        <span class="checkbox-text">Я принимаю правила</span>
+      </label>
+    </fieldset>
+
+    <button class="button">Отправить</button>
+
+
   </form>
-
 </body>
 
 </html>

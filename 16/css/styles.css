@@ -1,55 +1,57 @@
 body {
   font-family: sans-serif;
-  width: 375px;
 }
 
-.hh {
-  margin: 8px 0px;
+.form {
+  border: 1px solid #333;
+  border-radius: 6px;
+  max-width: 300px;
+  padding: 15px;
 }
 
-.fieldset-container {
-  margin: 0px;
-  border: 2px solid #000;
-  border-radius: 4px;
-  overflow: hidden
-}
-
-.fieldset-container fieldset {
+.form-group {
   border: none;
-  padding: 12px 12px 0px 12px;
+  padding: 0;
 }
 
-.input {
-  width: 260px;
-  height: 25px;
-  border-radius: 4px;
-  padding-left: 9px;
+.form-group-title {
+  font-weight: 700;
+  padding: 0;
+  margin-bottom: 10px;
 }
 
-textarea {
+.label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.textarea {
+  max-height: 150px;
+  min-height: 30px;
   resize: vertical;
-  max-height: 200px;
 }
 
-.label input {
-  display: block;
-  margin-block: 8px;
-}
-
-.labell {
-  display: block;
+.input,
+.textarea {
+  border: 1px solid #333;
+  border-radius: 6px;
+  min-width: 220px;
+  padding: 5px 12px;
+  margin-bottom: 10px;
+  outline: none;
 }
 
 .checkbox {
-  display: inline;
+  cursor: pointer;
 }
 
-.labell {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 3px;
+.checkbox-text {
+  font-size: 14px;
 }
 
 .button {
-  display: flex;
+  border: none;
+  border-radius: 6px;
+  padding: 5px 15px;
+  cursor: pointer;
 }
