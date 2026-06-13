@@ -3,6 +3,7 @@
   top: 0;
   right: 0;
   left: 0;
+  z-index: var(--layer-1);
   padding-block: 32px;
   transition: box-shadow var(--transition-time);
   background-color: var(--bg-color);
@@ -20,12 +21,12 @@
 
 @media (width > 768px) {
   .header__logo {
-  /* min-width 992px, max-width 1440px */
-  margin-right: clamp(25px, -11.585rem + 21.21vw, 120px);
+    /* min-width 992px, max-width 1440px */
+    margin-right: clamp(25px, -11.585rem + 21.21vw, 120px);
   }
 
   .header__menu {
-  flex-grow: 1;
+    flex-grow: 1;
   }
 }
 
@@ -43,7 +44,8 @@
     box-shadow: -2px 0 20px var(--shadow-color);
     opacity: 0;
     visibility: hidden;
-    transition: right var(--transition-time), opacity var(--transition-time), visibility var(--transition-time);
+    transition: right var(--transition-time), opacity var(--transition-time),
+      visibility var(--transition-time);
   }
 
   .header__menu--open {
@@ -66,13 +68,13 @@
 
 @media (width > 992px) {
   .header__controls {
-  gap: 60px;
+    gap: 60px;
   }
 }
 
 @media (width <= 992px) {
   .header__controls {
-  gap: 30px;
+    gap: 30px;
   }
 }
 
@@ -88,8 +90,8 @@
 
 @media (any-hover: hover) {
   .header__order:hover::before {
-  opacity: 1;
-  visibility: visible;
+    opacity: 1;
+    visibility: visible;
   }
 }
 
@@ -112,7 +114,6 @@
 
 .header__actions {
   display: flex;
-  gap: 20px;
 }
 
 @media (width > 768px) {
@@ -144,7 +145,7 @@
 }
 
 .header__actions-button:active {
-    color: var(--accent-color);
+  color: var(--accent-color);
 }
 
 .header__actions-icon {
